@@ -8,8 +8,8 @@
     <title>Trading Mentorship Program - Learn. Trade. Grow.</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'">
 </head>
 <body>
     <!-- Navigation -->
@@ -497,9 +497,9 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <script type="module">
-        import { SpeedInsights } from "@vercel/speed-insights/vanilla"
+        import { SpeedInsights } from "https://esm.sh/@vercel/speed-insights@1.2.0/vanilla"
         SpeedInsights()
     </script>
 </body>
