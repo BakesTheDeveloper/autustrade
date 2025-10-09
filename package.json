@@ -1,5 +1,33 @@
 {
-  "dependencies": {
-    "@vercel/speed-insights": "^1.2.0"
-  }
+  "name": "laaiq-trading",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "devDependencies": {
+    "@lhci/cli": "^0.15.1",
+    "clean-css": "^5.3.3",
+    "html-minifier": "^4.0.0",
+    "uglify-js": "^3.19.3",
+    "vercel": "^48.2.9"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "mkdir -p dist && npm-run-all -p build:*",
+    "build:html": "html-minifier index.html -o dist/index.html --remove-comments --collapse-whitespace --minify-js true --minify-css true",
+    "build:css": "cleancss -o dist/styles.css styles.css",
+    "build:js": "uglifyjs script.js -o dist/script.js",
+    "audit": "lhci autorun"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BakesTheDeveloper/autustrade.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/BakesTheDeveloper/autustrade/issues"
+  },
+  "homepage": "https://github.com/BakesTheDeveloper/autustrade#readme"
 }

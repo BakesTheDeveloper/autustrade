@@ -18,6 +18,7 @@
     --shadow-xl: 0 24px 48px -8px rgba(0, 0, 0, 0.18);
     --gold-gradient: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
     --navy-gradient: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+    font-size: 16px;
 }
 
 /* Global Styles */
